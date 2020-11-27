@@ -1,0 +1,215 @@
+$primary-color:#5b4394;
+$second-color:#f3d4e9;
+@mixin background{
+    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 150% auto; 
+    height: 598px;
+}
+*{
+	margin:0;
+    padding:0;
+    width: 100%;
+    box-sizing:border-box;
+    outline: none;
+}
+body {
+	max-width: 100%;
+	width:100%;
+	margin:auto;
+	font-family: 'Raleway',sans-serif;
+}
+.Diagnostic{
+    background-image: url("../images/write-593333_1920.jpg");
+    @include background;
+}
+.actualities{
+    background-image: url("../images/twitter-292994_1920.jpg");
+ @include background;
+}
+.ideas{
+    background-image: url("../images/light-bulbs-1875384_1920.jpg");
+ @include background;
+}
+.Transport{
+    background-image: url("../images/airport-2373727_1920.jpg");
+ @include background;
+}
+.permis{
+    background-image: url("../images/car-1149997_1920.jpg");
+    @include background;
+}
+.partenaires{
+    background-image: url("../images/paper-3213924_1920.jpg");
+    @include background;
+}
+article{
+    .idea{
+        padding: 20px 200px 10px 100px;
+        margin-bottom: 10px;
+
+        input{
+            margin-top: 5px;
+            padding:5px;
+        }
+        textarea{
+            margin-top: 5px;
+            padding:5px;
+        }
+
+    }
+    .button{ 
+        padding: 0 200px 0 100px;
+        button{
+        border-radius: 20px;
+        padding:10px;
+        transition: transform 500ms;
+        background: linear-gradient($second-color, $primary-color);
+        &:hover{
+            transform: scale(1.03);
+        }
+        }
+    }
+}
+a{
+    padding: 10px;
+    width: 10%;
+    text-decoration: none;
+    color:black;
+}
+header {    
+    display:flex;   
+    background-color:$primary-color;
+    color:white;
+    align-items: center;
+    width: 100%;
+    text-shadow: 0 5px 10px #272727dc;
+    box-shadow: 0 5px 10px #272727dc;
+    .logo{
+        width: 20%;
+
+    }
+    .nav{
+        display: flex;
+        flex-direction: row-reverse;
+        gap:30px;
+        margin-right: 50px;;
+        a{
+            color:white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            width: 13%;
+        }
+    }
+}
+.section{
+    animation: page 2s;
+    background-image: url("/images/provins-2450369_1920.jpg");
+    @include background;
+}
+
+@keyframes page{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+.element:nth-child(1){animation: element 300ms;}
+.element:nth-child(2){animation: element 700ms;}
+.element:nth-child(3){animation: element 1100ms;}
+.element:nth-child(4){animation: element 1500ms;}
+.element:nth-child(5){animation: element 1900ms;}
+.element:nth-child(6){animation: element 2300ms;}
+@keyframes element{
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+.box{
+    display: flex;
+	 
+    h2{
+        font-size: 4.5em;
+        padding: 70px 0 100px 20px;
+        width: 30%;
+        color: black;
+    }
+    .link{
+        width: 65%; 
+        margin-top: 40px;  
+        display: grid; 
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(3,170px);
+        a{
+            .element{   		
+                &:hover {
+                    transform: scale(1.02);
+                    box-shadow: 0 5px 10px #b8a6c783;
+                }
+                h3{
+                    font-size: 1.5em;
+                    padding-bottom: 20px;
+                }
+            border-radius: 20px;
+            color:black;
+            background-color:$second-color;
+            width: 300px;
+            height: 150px;
+            padding:10px;
+            }
+        }
+    }
+}
+.partners{  		
+        width: 200px;
+        padding: 10px;
+}
+.partners:nth-child(1){animation: partners 1000ms;}
+.partners:nth-child(2){animation: partners 2000ms;}
+@keyframes partners{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.corps{
+    display: grid; 
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(3, 60%);
+    justify-content: space-between;
+    gap: 10px;
+    .elements{
+        margin:10px;
+        color:rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.562);
+        padding: 5px;
+        border-radius: 10px;        
+        h2{
+            padding-bottom: 25px;
+        }  
+    }
+}
+
+footer{
+    box-shadow: 0 -5px 10px #272727dc;
+    background-color: $primary-color;
+    text-shadow: 0 5px 10px #272727dc;
+    padding: 40px;
+    a{
+        color:white;
+        font-size: 1.3em;
+    }
+}
