@@ -158,7 +158,7 @@ header .nav a {
 .section {
   -webkit-animation: page 2s;
           animation: page 2s;
-  background-image: url("/images/provins-2450369_1920.jpg");
+  background-image: url("../images/provins-2450369_1920.jpg");
   opacity: 0.8;
   background-position: center;
   background-repeat: no-repeat;
