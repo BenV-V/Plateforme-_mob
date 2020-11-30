@@ -1,5 +1,6 @@
 $primary-color:#5b4394;
 $second-color:#f3d4e9;
+$third-color: #e0d0db;
 @mixin background{
     opacity: 0.8;
     background-position: center;
@@ -27,24 +28,85 @@ body {
 }
 .actualities{
     background-image: url("../images/twitter-292994_1920.jpg");
- @include background;
+    @include background;
 }
 .ideas{
     background-image: url("../images/light-bulbs-1875384_1920.jpg");
- @include background;
+    @include background;
 }
 .Transport{
     background-image: url("../images/airport-2373727_1920.jpg");
- @include background;
+    @include background;
+ .box{
+    display: flex;
+    }
+    .link{
+        width: 65%; 
+        display: grid; 
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(3,170px);
+        text-align: center;
+
+        a{
+        margin: 50px auto;            
+        .element{   
+                &:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 5px 10px #b8a6c783;
+                }
+                h3{
+                    font-size: 1.5em;
+                    padding-top: 10px;
+                    padding-bottom: 20px;
+                }
+            border-radius: 100%;
+            color:black;
+            background-color:$third-color;
+            width: 300px;
+            height: 150px;
+            padding:10px;
+            }
+        }
+    }
 }
 .permis{
     background-image: url("../images/car-1149997_1920.jpg");
     @include background;
+    overflow:auto;
+    .infos_permis{
+        background-color: rgba(255, 255, 255, 0.829);
+        border-radius: 45px;
+        padding:20px;
+        width: 70%;
+        margin: auto;
+        text-align: justify;
+        h3, h4{
+            padding: 20px 0 20px 0;
+        }
+        p{
+            margin-top: 5px;
+        }
+    }
 }
 .partenaires{
     background-image: url("../images/paper-3213924_1920.jpg");
     @include background;
+    opacity: 0.7;
+    .box_partners{
+        background-color:#f3d4e9a9;
+        display: flex;
+        gap: 50px;
+        width: 60%;
+        padding-top: 20px;
+        padding: auto;
+        margin: auto;
+        border-radius: 30px;
+        .partners:nth-child(1){
+            margin-top: 40px;
+        }
 }
+}
+
 article{
     .idea{
         padding: 20px 200px 10px 100px;
@@ -88,20 +150,23 @@ header {
     text-shadow: 0 5px 10px #272727dc;
     box-shadow: 0 5px 10px #272727dc;
     .logo{
-        width: 20%;
+        width: 30%;
 
     }
     .nav{
         display: flex;
         flex-direction: row-reverse;
         gap:30px;
-        margin-right: 50px;;
+        margin-right: 50px;
         a{
             color:white;
             font-size: 1.2em;
             font-weight: bold;
             text-align: center;
             width: 13%;
+            i{
+                padding-bottom: 10px;
+            }
         }
     }
 }
@@ -136,6 +201,7 @@ header {
         opacity: 0.8;
     }
 }
+section{
 .box{
     display: flex;
 	 
@@ -170,6 +236,7 @@ header {
             }
         }
     }
+}
 }
 .partners{  		
         width: 200px;
