@@ -22,6 +22,41 @@ body {
 	margin:auto;
 	font-family: 'Raleway',sans-serif;
 }
+
+.container{
+    img{
+        height: 350px;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+.bg{
+    margin: 3px 0 3px 0;
+    background-color: #ac0996;
+    .navbar-brand{    
+        img{
+            padding-right: 20px;
+            width: 70%;
+            height: 70%;
+        }
+    }
+    li{
+        padding-left: 50px;
+    }
+}
+.card{
+    img{
+        width: 15em;
+        height: 10em;
+        margin: 0 auto;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+
+// images des pages //
+
 .Diagnostic{
     background-image: url("../images/write-593333_1920.jpg");
     @include background;
@@ -46,7 +81,6 @@ body {
         grid-template-columns: repeat(2, 350px);
         grid-template-rows: repeat(3,170px);
         text-align: center;
-
         a{
         margin: 50px auto;            
         .element{   
@@ -69,6 +103,7 @@ body {
         }
     }
 }
+
 .permis{
     background-image: url("../images/car-1149997_1920.jpg");
     @include background;
@@ -88,6 +123,8 @@ body {
         }
     }
 }
+
+
 .partenaires{
     background-image: url("../images/paper-3213924_1920.jpg");
     @include background;
@@ -104,7 +141,7 @@ body {
         .partners:nth-child(1){
             margin-top: 40px;
         }
-}
+    }
 }
 
 article{
@@ -135,41 +172,14 @@ article{
         }
     }
 }
+
+
 a{
     padding: 10px;
-    width: 10%;
     text-decoration: none;
     color:black;
 }
-header {    
-    display:flex;   
-    background-color:$primary-color;
-    color:white;
-    align-items: center;
-    width: 100%;
-    text-shadow: 0 5px 10px #272727dc;
-    box-shadow: 0 5px 10px #272727dc;
-    .logo{
-        width: 30%;
 
-    }
-    .nav{
-        display: flex;
-        flex-direction: row-reverse;
-        gap:30px;
-        margin-right: 50px;
-        a{
-            color:white;
-            font-size: 1.2em;
-            font-weight: bold;
-            text-align: center;
-            width: 13%;
-            i{
-                padding-bottom: 10px;
-            }
-        }
-    }
-}
 .section{
     animation: page 2s;
     background-image: url("../images/provins-2450369_1920.jpg");
@@ -238,6 +248,8 @@ section{
     }
 }
 }
+
+
 .partners{  		
         width: 200px;
         padding: 10px;
@@ -252,31 +264,4 @@ section{
         opacity: 1;
     }
 }
-.corps{
-    display: grid; 
-    grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(3, 60%);
-    justify-content: space-between;
-    gap: 10px;
-    .elements{
-        margin:10px;
-        color:rgb(0, 0, 0);
-        background-color: rgba(255, 255, 255, 0.562);
-        padding: 5px;
-        border-radius: 10px;        
-        h2{
-            padding-bottom: 25px;
-        }  
-    }
-}
 
-footer{
-    box-shadow: 0 -5px 10px #272727dc;
-    background-color: $primary-color;
-    text-shadow: 0 5px 10px #272727dc;
-    padding: 40px;
-    a{
-        color:white;
-        font-size: 1.3em;
-    }
-}
