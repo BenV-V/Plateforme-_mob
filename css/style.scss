@@ -22,7 +22,16 @@ body {
 	margin:auto;
 	font-family: 'Raleway',sans-serif;
 }
-
+.navbar-nav{
+    a{
+        color:white;
+        font-weight: bold;
+        text-align: center;
+        i{
+            padding-bottom: 10px;
+        }
+    }   
+}
 .container{
     img{
         height: 350px;
@@ -60,6 +69,15 @@ body {
 .Diagnostic{
     background-image: url("../images/write-593333_1920.jpg");
     @include background;
+    .row{
+        padding-top:10px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        .card{
+            border-radius: 30px;
+            text-align: center;                
+        }        
+    }
 }
 .actualities{
     background-image: url("../images/twitter-292994_1920.jpg");
@@ -72,33 +90,20 @@ body {
 .Transport{
     background-image: url("../images/airport-2373727_1920.jpg");
     @include background;
- .box{
-    display: flex;
-    }
-    .link{
-        width: 65%; 
-        display: grid; 
-        grid-template-columns: repeat(2, 350px);
-        grid-template-rows: repeat(3,170px);
-        text-align: center;
-        a{
-        margin: 50px auto;            
-        .element{   
-                &:hover {
-                    transform: scale(1.05);
-                    box-shadow: 0 5px 10px #b8a6c783;
-                }
-                h3{
-                    font-size: 1.5em;
-                    padding-top: 10px;
-                    padding-bottom: 20px;
-                }
-            border-radius: 100%;
-            color:black;
-            background-color:$third-color;
-            width: 300px;
-            height: 150px;
-            padding:10px;
+    .row{
+        padding-top: 20px;
+        padding-left: 10px;
+        .col-12{
+            .card{
+            border-radius: 20px;
+            background-color: $third-color;
+            opacity: .95;
+            .btn{
+                background-color: $third-color;
+                border: none;
+                color: $primary-color;
+                font-size: 1.5em;
+            }
             }
         }
     }
@@ -146,7 +151,7 @@ body {
 
 article{
     .idea{
-        padding: 20px 200px 10px 100px;
+        padding: 10px 200px 10px 100px;
         margin-bottom: 10px;
 
         input{

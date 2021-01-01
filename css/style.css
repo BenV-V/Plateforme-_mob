@@ -14,6 +14,16 @@ body {
   font-family: 'Raleway',sans-serif;
 }
 
+.navbar-nav a {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar-nav a i {
+  padding-bottom: 10px;
+}
+
 .container img {
   height: 350px;
   -o-object-fit: cover;
@@ -57,6 +67,17 @@ body {
   height: 598px;
 }
 
+.Diagnostic .row {
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.Diagnostic .row .card {
+  border-radius: 30px;
+  text-align: center;
+}
+
 .actualities {
   background-image: url("../images/twitter-292994_1920.jpg");
   opacity: 0.8;
@@ -87,47 +108,22 @@ body {
   height: 598px;
 }
 
-.Transport .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.Transport .row {
+  padding-top: 20px;
+  padding-left: 10px;
 }
 
-.Transport .link {
-  width: 65%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (350px)[2];
-      grid-template-columns: repeat(2, 350px);
-  -ms-grid-rows: (170px)[3];
-      grid-template-rows: repeat(3, 170px);
-  text-align: center;
-}
-
-.Transport .link a {
-  margin: 50px auto;
-}
-
-.Transport .link a .element {
-  border-radius: 100%;
-  color: black;
+.Transport .row .col-12 .card {
+  border-radius: 20px;
   background-color: #e0d0db;
-  width: 300px;
-  height: 150px;
-  padding: 10px;
+  opacity: .95;
 }
 
-.Transport .link a .element:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-box-shadow: 0 5px 10px #b8a6c783;
-          box-shadow: 0 5px 10px #b8a6c783;
-}
-
-.Transport .link a .element h3 {
+.Transport .row .col-12 .card .btn {
+  background-color: #e0d0db;
+  border: none;
+  color: #5b4394;
   font-size: 1.5em;
-  padding-top: 10px;
-  padding-bottom: 20px;
 }
 
 .permis {
@@ -187,7 +183,7 @@ body {
 }
 
 article .idea {
-  padding: 20px 200px 10px 100px;
+  padding: 10px 200px 10px 100px;
   margin-bottom: 10px;
 }
 
