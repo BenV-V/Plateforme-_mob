@@ -14,97 +14,143 @@ body {
   font-family: 'Raleway',sans-serif;
 }
 
+.navbar-nav a {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar-nav a i {
+  padding-bottom: 10px;
+}
+
+.container img {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.bg {
+  margin: 3px 0 3px 0;
+  background-color: #ac0996;
+}
+
+.bg .navbar-brand img {
+  padding-right: 20px;
+  width: 70%;
+  height: 70%;
+}
+
+.bg li {
+  padding-left: 50px;
+}
+
+.card img {
+  width: 15em;
+  height: 10em;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
 .Diagnostic {
   background-image: url("../images/write-593333_1920.jpg");
   opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   background-size: cover;
-  background-size: 150% auto;
-  height: 598px;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.Diagnostic .row {
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.Diagnostic .row .card {
+  border-radius: 30px;
+  text-align: center;
 }
 
 .actualities {
   background-image: url("../images/twitter-292994_1920.jpg");
   opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   background-size: cover;
-  background-size: 150% auto;
-  height: 598px;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  padding-top: 20px;
 }
 
 .ideas {
   background-image: url("../images/light-bulbs-1875384_1920.jpg");
   opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   background-size: cover;
-  background-size: 150% auto;
-  height: 598px;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
 }
 
 .Transport {
   background-image: url("../images/airport-2373727_1920.jpg");
+  background-position: 100%;
   opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   background-size: cover;
-  background-size: 150% auto;
-  height: 598px;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
 }
 
-.Transport .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.Transport .row {
+  padding-top: 20px;
+  padding-left: 10px;
 }
 
-.Transport .link {
-  width: 65%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (350px)[2];
-      grid-template-columns: repeat(2, 350px);
-  -ms-grid-rows: (170px)[3];
-      grid-template-rows: repeat(3, 170px);
-  text-align: center;
-}
-
-.Transport .link a {
-  margin: 50px auto;
-}
-
-.Transport .link a .element {
-  border-radius: 100%;
-  color: black;
+.Transport .row .col-12 .card {
+  border-radius: 20px;
   background-color: #e0d0db;
-  width: 300px;
-  height: 150px;
-  padding: 10px;
+  opacity: .95;
 }
 
-.Transport .link a .element:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-box-shadow: 0 5px 10px #b8a6c783;
-          box-shadow: 0 5px 10px #b8a6c783;
-}
-
-.Transport .link a .element h3 {
+.Transport .row .col-12 .card .btn {
+  background-color: #e0d0db;
+  border: none;
+  color: #5b4394;
   font-size: 1.5em;
-  padding-top: 10px;
-  padding-bottom: 20px;
 }
 
 .permis {
   background-image: url("../images/car-1149997_1920.jpg");
   opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   background-size: cover;
-  background-size: 150% auto;
-  height: 598px;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
   overflow: auto;
 }
 
@@ -128,11 +174,14 @@ body {
 .partenaires {
   background-image: url("../images/paper-3213924_1920.jpg");
   opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   background-size: cover;
-  background-size: 150% auto;
-  height: 598px;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
   opacity: 0.7;
 }
 
@@ -154,7 +203,7 @@ body {
 }
 
 article .idea {
-  padding: 20px 200px 10px 100px;
+  padding: 2em 5em 2em 5em;
   margin-bottom: 10px;
 }
 
@@ -169,7 +218,7 @@ article .idea textarea {
 }
 
 article .button {
-  padding: 0 200px 0 100px;
+  padding: 0 5em 2em 5em;
 }
 
 article .button button {
@@ -190,52 +239,8 @@ article .button button:hover {
 
 a {
   padding: 10px;
-  width: 10%;
   text-decoration: none;
   color: black;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #5b4394;
-  color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  text-shadow: 0 5px 10px #272727dc;
-  -webkit-box-shadow: 0 5px 10px #272727dc;
-          box-shadow: 0 5px 10px #272727dc;
-}
-
-header .logo {
-  width: 30%;
-}
-
-header .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  gap: 30px;
-  margin-right: 50px;
-}
-
-header .nav a {
-  color: white;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: center;
-  width: 13%;
-}
-
-header .nav a i {
-  padding-bottom: 10px;
 }
 
 .section {
@@ -243,11 +248,14 @@ header .nav a i {
           animation: page 2s;
   background-image: url("../images/provins-2450369_1920.jpg");
   opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   background-size: cover;
-  background-size: 150% auto;
-  height: 598px;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
 }
 
 @-webkit-keyframes page {
@@ -322,51 +330,6 @@ header .nav a i {
   }
 }
 
-section .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-section .box h2 {
-  font-size: 4.5em;
-  padding: 70px 0 100px 20px;
-  width: 30%;
-  color: black;
-}
-
-section .box .link {
-  width: 65%;
-  margin-top: 40px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (350px)[2];
-      grid-template-columns: repeat(2, 350px);
-  -ms-grid-rows: (170px)[3];
-      grid-template-rows: repeat(3, 170px);
-}
-
-section .box .link a .element {
-  border-radius: 20px;
-  color: black;
-  background-color: #f3d4e9;
-  width: 300px;
-  height: 150px;
-  padding: 10px;
-}
-
-section .box .link a .element:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-box-shadow: 0 5px 10px #b8a6c783;
-          box-shadow: 0 5px 10px #b8a6c783;
-}
-
-section .box .link a .element h3 {
-  font-size: 1.5em;
-  padding-bottom: 20px;
-}
-
 .partners {
   width: 200px;
   padding: 10px;
@@ -400,41 +363,16 @@ section .box .link a .element h3 {
   }
 }
 
-.corps {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (30%)[3];
-      grid-template-columns: repeat(3, 30%);
-  -ms-grid-rows: (60%)[3];
-      grid-template-rows: repeat(3, 60%);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 10px;
+.list-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.corps .elements {
-  margin: 10px;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.562);
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.corps .elements h2 {
-  padding-bottom: 25px;
-}
-
-footer {
-  -webkit-box-shadow: 0 -5px 10px #272727dc;
-          box-shadow: 0 -5px 10px #272727dc;
-  background-color: #5b4394;
-  text-shadow: 0 5px 10px #272727dc;
-  padding: 40px;
-}
-
-footer a {
-  color: white;
-  font-size: 1.3em;
+.card {
+  margin-bottom: 20px;
+  width: 80%;
+  margin: 20px auto;
+  padding: auto;
 }
 /*# sourceMappingURL=style.css.map */
