@@ -369,19 +369,10 @@ a {
   display: flex;
 }
 
-.box {
-  padding-right: 50px;
-}
-
-.box #quote, .box #quote1, .box #quote2 {
-  padding: 2rem;
-  margin: 10px;
-  background: rgba(0, 0, 0, 0.8);
-  font-size: 2rem;
-  border-radius: 10px;
-  -webkit-transition: .5s;
-  transition: .5s;
-  color: #eee;
-  cursor: pointer;
+.card {
+  margin-bottom: 20px;
+  width: 80%;
+  margin: 20px auto;
+  padding: auto;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,41 +1,29 @@
-const quote = document.getElementById("quote");
 
-const getQuote = () => {
-  fetch("https://api.quotable.io/random")
-    .then((res) => res.json())
-    .then((data) => {
-      quote.innerHTML = data.content;
-    });
-};
-
-quote.addEventListener("click", () => getQuote());
-
-getQuote();
-
-const quote1 = document.getElementById("quote1");
-
-const getQuote1 = () => {
-  fetch("https://api.quotable.io/random")
-    .then((res) => res.json())
-    .then((data) => {
-      quote1.innerHTML = data.content;
-    });
-};
-
-quote1.addEventListener("click", () => getQuote1());
-
-getQuote1();
-
-const quote2 = document.getElementById("quote2");
-
-const getQuote2 = () => {
-  fetch("https://api.quotable.io/random")
-    .then((res) => res.json())
-    .then((data) => {
-      quote2.innerHTML = data.content;
-    });
-};
-
-quote2.addEventListener("click", () => getQuote2());
-
-getQuote2();
+fetch('https://test.spaceflightnewsapi.net/api/v2/articles')
+    .then(response => {return response.json()})
+    .then((response) => {for(let i = 0; i < response.length; i++) {
+        class Response {
+          constructor(image, title, summary, url){
+              this.image = image;
+              this.title = title;
+              this.summary= summary;
+              this.url = url;
+          }
+      }
+      let newResponse = new Response(
+          response[i].imageUrl,
+          response[i].title,
+          response[i].summary,
+          response[i].url,        
+      )
+      console.log(response)
+      document.querySelector('.box').innerHTML +=  
+      `<div class="card">    
+        <img src="${newResponse.image}" class="card-img-top" alt="actualités">
+        <div class="card-body">
+          <h3 class="card-title">${newResponse.title}</h3>
+          <p class="row">description : ${newResponse.summary}</p>
+          <a href="${newResponse.url}" class="btn btn-primary stretched-link">Voir l'article</a>
+        </div>
+      </div>`
+  }})
